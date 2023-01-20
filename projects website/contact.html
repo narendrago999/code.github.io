@@ -87,7 +87,7 @@ nav ul a{
     </div>
     <form>
         <input type="text" placeholder="Full Name" id="fullName" required><br>
-        <input type="email" placeholder="email" id="email" required><br>
+        <input type="email" placeholder="email" id="email_id" required><br>
          <input type="number" placeholder="Mobile Number" id="number" required><br>
         <textarea name="" id="message" cols="30" rows="10" placeholder="query"></textarea><br>
       <button onclick="sendMail()">Send</button>
@@ -167,7 +167,7 @@ nav ul a{
                 number : document.getElementById("number").value,
                 message : document.getElementById("message").value
             }
-            emailjs.send("service_az5lwv9", "template_z9c85ni", params).then(function (res){
+            emailjs.send("service_cbq93f6", "template_21ej1dx", params).then(function (res){
                 alert("send success!");
             })
         }
