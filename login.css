@@ -1,0 +1,464 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 5px 20px;
+}
+nav img{
+    width: 150px;
+    margin-left: 80px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    /* background-color: red; */
+    width: 100%;
+
+}
+nav ul li{
+    margin-left: 30px;
+   
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+nav ul li:hover{
+    background-color: purple;
+    box-shadow: 0px 0px 50px 2px purple;
+    transition: 0.3s ease;
+    opacity: 0.7;
+}
+nav ul li:nth-child(1){
+    margin-left: 42%;
+}
+nav ul li:nth-child(6){
+    background-color: purple;
+    padding: 5px;
+    border-radius: 0;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li:hover .hidden-box{
+    display: block;
+
+} 
+.hidden-box{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 470px;
+    
+}
+
+.hidden-box ul{
+    list-style: none;
+    margin-left: 0;
+    display: block;
+    /* background-color: white; */
+    width: max-content;
+    padding: 10px 0px;
+    border-radius: 20px;
+
+}
+
+.hidden-box ul li{
+    background-color: purple;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 150px;
+    text-align: center;
+    padding: 3px;
+}
+.hidden-box ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.signin{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+#sign1{
+    display: none;
+}
+.signin a{
+ color: white;
+ text-decoration: none;
+
+}
+.btn{
+    display: none;
+}
+.btn img{
+    width: 30px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: purple;
+    opacity: 0.5;
+    /* display: none; */
+}
+.signin-up{
+    display: flex;
+}
+.login-box{
+    /* background-color: red; */
+    text-align: center;
+    width: 650px;
+    padding: 80px 60px;
+}
+.login-box .login ul{
+    list-style: none;
+    border: 2px solid purple;
+    box-shadow: 0px 0px 50px 0px purple;
+    /* padding: 0; */
+    padding: 45px;
+    margin-left: 60px;
+    padding-top: 30px;
+    
+}
+.login-box .login ul h1{
+ color: white;
+}
+
+.login-box .login ul li{
+    margin-top: 50px;
+    color: white;
+   
+}
+.login-box .login ul li:nth-child(4){
+    margin-top: 25px;
+}
+.login-box .login ul li button{
+    padding: 4px 8px;
+    font-weight: 500;
+    border-radius: 13px;
+}
+.login-box .login ul li:nth-child(5){
+    margin-top: 5px;
+}
+.login-box .login ul li a{
+    text-decoration: none;
+    color: purple;
+    margin-left: 2px;
+}
+.login-box .login ul li input{
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 16px;
+    outline: none;
+    background-color: purple;
+    color: white;
+    border: none;
+}
+.login-box .login ul li:nth-child(6) img{
+    width: 30px;
+    margin: 10px 25px;
+}
+.login-box .login ul li:nth-child(6) img:hover{
+    width: 40px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+form{
+    width: 58.9vw;
+    display: none;
+    /* background-color: red; */
+
+
+}
+.main-box{
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 5px 50px;
+    border: 2px solid purple;
+    box-shadow: 0px 0px 50px 0px purple;
+    margin: 100px auto;
+}
+form fieldset legend{
+    color: white;
+    opacity: 0.7;
+}
+form fieldset{
+    width: max-content;
+    border-color: purple;
+    margin-top: 30px;
+}
+form fieldset input{
+    width: 15vw;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+form .box{
+    display: flex;
+}
+.main-box h1{
+    color: white;
+}
+form .main-box .box input[type=submit]{
+    margin: auto;
+    margin-top: 40px;
+    padding: 4px;
+    border-radius: 13px;
+    
+}
+form .main-box p{
+    color: white;
+    text-align: center;
+}
+.image{
+    width: 58.9vw;
+    
+    display: flex;
+    display: none;
+    align-items: center;
+
+}
+#image0{
+    display: none;
+}
+.image img{
+    width: 20vw;
+    margin-left: 200px;
+    /* display: none; */
+    /* margin-top: 60px; */
+}
+.demo-course{
+    display: flex;
+    /* background-color: red; */
+    width: 49vw;
+    justify-content: center;
+
+}
+.demo-course .course{
+    /* border: 2px solid purple; */
+    text-align: center;
+    padding: 0;
+    width: 10vw;
+    
+    height: 25vh;
+}
+.demo-course .course img{
+    width: 80px;
+    margin-left: 0;
+    margin-top: 0;
+    background: blue;
+    
+    padding: 10px;
+    background: black;
+}
+.demo-course .course img:hover{
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.demo-course .course h3{
+    color: white;
+}
+.im{
+    padding-top: 60px;
+}
+@mediaonly screen and (max-width = 500px){
+
+    body{
+        padding: 0;
+        margin: 0;
+        background: black;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 5px 20px;
+    }
+    nav img{
+        width: 150px;
+        margin-left: 150px;
+    }
+    nav ul{
+        display:none;
+        list-style: none;
+        /* background-color: red; */
+        width: 100%;
+    
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        margin-bottom: 0;
+        background-color: purple;
+        opacity: 0.5;
+        /* display: none; */
+    }
+    .signin-up{
+        display: flex;
+    }
+    .login-box{
+        /* background-color: red; */
+        text-align: center;
+        margin: 0;
+      
+       height: 67vh;
+        width: max-content;
+        padding: 80px 60px;
+    }
+    .login-box .login ul{
+        list-style: none;
+        border: 2px solid purple;
+        box-shadow: 0px 0px 50px 0px purple;
+        /* padding: 0; */
+        padding: 45px;
+        width: 80%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 30px;
+        
+    }
+    .login-box .login ul h1{
+     color: white;
+    }
+    
+    .login-box .login ul li{
+        margin-top: 50px;
+        color: white;
+       
+    }
+    .login-box .login ul li:nth-child(4){
+        margin-top: 25px;
+    }
+    .login-box .login ul li button{
+        padding: 4px 8px;
+        font-weight: 500;
+        border-radius: 13px;
+    }
+    .login-box .login ul li:nth-child(5){
+        margin-top: 5px;
+    }
+    .login-box .login ul li a{
+        text-decoration: none;
+        color: purple;
+        margin-left: 2px;
+    }
+    .login-box .login ul li input{
+        height: 40px;
+        width: 250px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 16px;
+        outline: none;
+        background-color: purple;
+        color: white;
+        border: none;
+    }
+    .login-box .login ul li:nth-child(6) img{
+        width: 30px;
+        margin: 10px 18px;
+    }
+    .login-box .login ul li:nth-child(6) img:hover{
+        width: 40px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    form{
+        width: 58.9vw;
+        display: none;
+        margin-left: -380px;
+        /* background-color: red; */
+    
+    
+    }
+    .main-box{
+        /* background-color: blue; */
+        width: 60vw;
+        padding: 5px 50px;
+        border: 2px solid purple;
+        box-shadow: 0px 0px 50px 0px purple;
+    
+        margin: 70px auto;
+    }
+    form fieldset legend{
+        color: white;
+        opacity: 0.7;
+    }
+    form fieldset{
+        width: 90%;
+        border-color: purple;
+        margin-top: 30px;
+    }
+    form fieldset input{
+        width: 100%;
+        color: white;
+        
+        background: none;
+        border: none;
+        outline: none;
+    }
+    
+    form .box{
+        display: block;
+        text-align: center;
+
+       
+    }
+    .main-box h1{
+        color: white;
+    }
+    form .main-box .box input[type=submit]{
+        margin: auto;
+        margin-top: 40px;
+        padding: 4px;
+        border-radius: 13px;
+        
+    }
+    form .main-box p{
+        color: white;
+        text-align: center;
+    }
+    .image{
+        display: none;
+        width: 58.9vw;
+        
+        display: flex;
+        align-items: center;
+    
+    }
+    #image0{
+        display: none;
+        opacity: 0;
+    }
+    .image img{
+        width: 20vw;
+        margin-left: 200px;
+        display: none;
+        /* margin-top: 60px; */
+    }
+    .demo-course{
+        display: none;
+        /* background-color: red; */
+        width: 49vw;
+        justify-content: center;
+    
+    }
+    .im{
+        
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./Images/logo1.png" alt="loading..." />
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Courses</a>
+          <div class="hidden-box" id="hidden">
+            <ul>
+                <br>
+                <li><a href="">Web Development</a></li>
+                <li><a href="">C++ Programming</a></li>
+                <li><a href="">Python Programming</a></li>
+                <li><a href="">C - Programming</a></li>
+            </ul>
+        </div>
+        </li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About Us</a></li>
+        
+        <div class="signin">
+          <a href="" id="sign" onclick="signs()">SignUp</a>
+          <a href="" id="sign1" onclick="signs1()">SignIn</a>
+        </div>
+      
+        
+        <div class="btn">
+          <button onclick="menu()" id="menu_open">
+            <img src="./Images/hamburger.png" alt="loading..." />
+          </button>
+          <button onclick="close_menu()" id="menu_close">
+            <img src="./Images/close.png" alt="loading..." />
+          </button>
+        </div>
+      </ul>
+    </nav>
+    <div class="line"></div>
+    <div class="signin-up">
+      <div class="login-box">
+        <div class="image" id="image0">
+          <img src="./Images/CodeByte.png" alt="loading..." id="img0">
+          <div class="demo-course">
+            <div class="course" id="web">
+              <img src="./Images/web development.png" alt="loading...">
+              <h3>Web Development</h3>
+            </div>
+            <div class="course">
+              <img src="./Images/C++.png" alt="loading...">
+              <h3>C++</h3>
+            </div>
+            <div class="course">
+              <img src="./Images/python.png" alt="loading...">
+              <h3>Python</h3>
+            </div>
+            <div class="course">
+              <img src="./Images/C.png" alt="loading...">
+              <h3>C</h3>
+            </div>
+          </div>
+        </div>
+        <div class="login" id="login-box">
+          
+          <ul>
+            <h1>SignIn</h1>
+            <li>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                id="email"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                id="password"
+              />
+            </li>
+            <li>
+              <button><a href="">SignIn</a></button>
+            </li>
+            <li>click here to <a onclick="signs()" href="#">SignUp</a></li>
+            <li><img src="./Images/google.png" alt="1" /><img
+                src="./Images/linkedin.png"
+                alt="2"
+              /><img src="./Images/facebook.png" alt="2" /><img
+                src="./Images/microsoft.png"
+                alt="2"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="image" id="image1">
+        <div class="im">
+        <img src="./Images/CodeByte.png" alt="loading..." id="img1">
+        <div class="demo-course">
+          <div class="course" id="web">
+            <img src="./Images/web development.png" alt="loading...">
+            <h3>Web Development</h3>
+          </div>
+          <div class="course">
+            <img src="./Images/C++.png" alt="loading...">
+            <h3>C++</h3>
+          </div>
+          <div class="course">
+            <img src="./Images/python.png" alt="loading...">
+            <h3>Python</h3>
+          </div>
+          <div class="course">
+            <img src="./Images/C.png" alt="loading...">
+            <h3>C</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <form action="./verification_link.html" id="form">
+        <div class="main-box">
+            <h1>SignUp Here!</h1>
+        <div class="box">
+          <fieldset>
+            <legend>Enter First Name</legend>
+            <input type="text" name="fname"  />
+          </fieldset>
+          <fieldset>
+            <legend>Enter Last Name</legend>
+            <input type="text" name="lname"  />
+          </fieldset>
+        </div>
+        <div class="box">
+            <fieldset>
+              <legend>Enter Your Email</legend>
+              <input type="email" name="email"  />
+            </fieldset>
+            <fieldset>
+              <legend>Enter Your Number</legend>
+              <input type="number" name="number"  />
+            </fieldset>
+          </div>
+          <div class="box">
+            <fieldset>
+              <legend>Create Password</legend>
+              <input type="password" name="password"  />
+            </fieldset>
+            <fieldset>
+              <legend>Confirm Password</legend>
+              <input type="password" name="cpassword" />
+            </fieldset>
+          </div>
+          <div class="box">
+            <input type="submit" value="SignUp">
+            
+          </div>
+          <p>Already SignUp ? <button><a href="#" onclick="signsin()">SignIn</a></button></p>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js">
+
+    </script>
+    
+  </body>
+</html>

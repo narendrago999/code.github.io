@@ -1,0 +1,83 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+nav img{
+    width: 150px;
+    margin-left: 8%;
+}
+nav h3{
+    margin-left: 25%;
+}
+nav button{
+    border: 1px solid purple;
+    padding: 0.5%;
+    border-radius: 6px;
+    margin-left: 27%;
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow: 0px 2px 0px 1px purple;
+}
+nav button a{
+    text-decoration: none;
+    color: black;
+}
+nav button:hover{
+    background-color: purple;
+    transition: 0.6s ease;
+    box-shadow: 0px 0px 0px 1px purple;
+}
+nav button:hover a{
+    color: white;
+    transition: 0.6s ease;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: purple;
+    opacity: 0.5;
+    box-shadow: 0px 10px 30px 11px purple;
+
+    /* display: none; */
+}
+.content{
+    text-align: center;
+    color: white;
+    
+}
+.content img{
+    width: 25%;
+}
+.content button a{
+    text-decoration: none;
+    color: black;
+
+}
+.content button{
+    border: 1px solid purple;
+    padding: 0.5%;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow: 0px 2px 0px 1px purple;
+
+}
+.content button:hover{
+    background-color: purple;
+    
+    box-shadow: 0px 0px 0px 1px purple;
+
+}
+.content button:hover a{
+    color: white;
+    transition: 0.6s ease;
+}

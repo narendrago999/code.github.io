@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        .box{
+            position: absolute;
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            animation: fadein 30s infinite;
+            transition: 5s fadein;
+            
+          
+        }
+        @keyframes fadein {
+            0%{
+        opacity: 0;
+        }
+        25%{
+            opacity: 0.5;
+        }
+        50%{
+            opacity: 1;
+        }
+        75%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 0;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./start_quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="./Images/logo1.png" alt="loading...">
+        <h3>Quiz Powered by CodeByte</h3>
+    </nav>
+    <div class="line"></div>
+    <div class="questions" id="quiz-box">
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c1" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r1" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r2" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r3" onclick="correctAns(this.id)">4. none</p>
+            
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c2" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r4" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r5" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r6" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c3" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r7" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r8" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r9" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c4" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r10" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r11" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r12" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c5" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r13" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r14" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r15" onclick="correctAns(this.id)">4. none</p>
+            
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c6" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r16" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r17" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r18" onclick="correctAns(this.id)">4. none</p>
+            
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c7" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r19" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r20" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r21" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c8" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r22" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r23" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r24" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c9" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r25" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r26" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r27" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+        <div class="question">
+            <p><span>Ques. 1--></span> Choose Correct about malloc() and calloc().</p>
+            <p id="c10" onclick="correctAns(this.id)">1. Both have difference</p>
+            <p id="r29" onclick="correctAns(this.id)">2. Both have same work</p>
+            <p id="r30" onclick="correctAns(this.id)">3. All of these</p>
+            <p id="r31" onclick="correctAns(this.id)">4. none</p>
+           
+        </div>
+    </div>
+    <div class="results">
+        <button id="s1" onclick="totalAns(this.id)">submit</button>
+        <div class="hid" id="hid">
+        <div class="result"><p>Result :</p> <p id="result"> ?</p></div>
+        <p id="suggest"></p>
+        <div class="again">
+            <button onclick="reload()">Re-attempt</button>
+            <button><a href="./secret.html">Next</a></button>
+        </div>
+        <p class="re-info">To re-attempt the Quiz, Click on re - attempt button or refresh the page.</p>
+    </div>
+    </div>
+    <script>
+        var count=0;
+        // var attempt=0
+        function reload(){
+            document.location.reload(true);
+            var s1= document.getElementById("s1");
+            s1.innerHTML="Submit";
+            // attempt++;
+        }
+        function totalAns(){
+        var result = document.getElementById("result");
+        var quiz_box = document.getElementById("quiz-box");
+        var hid = document.getElementById("hid");
+        var s1= document.getElementById("s1");
+        var suggest = document.getElementById("suggest");
+        s1.innerHTML="Submited";
+        hid.style.display="block";
+        quiz_box.style.display="none";
+        result.style.color="white";
+        // attempt++;
+        result.innerHTML=count;
+        if(count>=3 && count<=5){
+            suggest.style.color="red";
+            suggest.innerHTML="Poor, Don't Loose hope, keep trying...";
+        }else if(count<3){
+            suggest.style.color="brown";
+            suggest.innerHTML="We think you are new to Coding Life, keep trying...";
+        }else if(count>5 && count<8){
+            suggest.style.color="blue";
+            suggest.innerHTML="Good, Keep trying...";
+        }else if(count>=8 && count<10){
+            suggest.style.color="yellow";
+
+            suggest.innerHTML="Very Good, keep trying..."
+        }else if(count == 10){
+            suggest.style.color="green";
+            suggest.innerHTML="Excilent Work";
+        }
+        
+        }
+        function correctAns(id){
+            var c = document.getElementById(id);
+           
+           
+                switch(id){
+                   case "c1":
+                       c.style.background="green";
+                       count++;
+                       console.log(count);
+                       break;
+                   case "c2":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c3":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c4":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c5":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c6":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c7":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c8":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c9":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   case "c10":c.style.background="green";
+                       count++;    
+                       console.log(count);
+                       break;
+                   default: c.style.background="red";
+                       count--;
+                       console.log(count);
+                       break;
+                   }
+            
+            
+            event.preventDefault();
+        }
+
+    </script>
+</body>
+</html>

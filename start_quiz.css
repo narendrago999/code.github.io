@@ -1,0 +1,108 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+nav img{
+    width: 150px;
+    margin-left: 8%;
+}
+nav h3{
+    margin-left: 25%;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: purple;
+    opacity: 0.5;
+    box-shadow: 0px 10px 30px 11px purple;
+
+    /* display: none; */
+}
+.questions{
+    width: 100%;
+}
+.questions .question{
+    width: 80%;
+    margin: auto;
+    border: 1px solid purple;
+    padding: 10px 20px;
+    margin-top: 2%;
+}
+.questions .question p span{
+    color: purple;
+    font-weight: 600;
+    letter-spacing: 1PX;
+    line-height: 10px;
+}
+.questions .question p{
+    letter-spacing: 1px;
+    margin-left: 85px;
+    padding: 1%;
+    border-radius: 60px;
+    width: max-content;
+   
+    cursor: pointer;
+}
+.questions .question p:nth-child(1){
+    margin-left: 0;
+}
+.btn{
+    width: 100%;
+    text-align: end;
+}
+.btn button{
+    border: 1px solid purple;
+    font-weight: 600;
+    padding: 4px;
+}
+.btn button:hover{
+    background-color: purple;
+    color: white;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.results{
+    
+    margin: 6%;
+    text-align: center;
+}
+.results .result{
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+.results button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid purple;
+    padding: 0.5%;
+}
+.results button:hover{
+    background-color: purple;
+    transition: 0.3s ease;
+}
+.results .again button a{
+    text-decoration: none;
+    color: white;
+}
+#hid{
+    display: none;
+}
+#suggest{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.re-info{
+    opacity: 0.4;
+}
