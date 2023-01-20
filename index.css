@@ -234,6 +234,46 @@ nav ul li a{
 .services .service p{
     color: white;
 }
+.service{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.services .Coursesdemo{
+    width: 30%;
+    height: 70vh;
+    border: 1px dashed purple;
+    color: white;
+    box-shadow: purple 0px 0px 117px -2px;
+
+}
+.services .Coursesdemo a{
+    text-decoration:none ;
+    color: white;
+}
+#free{
+    color: green;
+    font-size: 40px;
+}
+#cost{
+    font-size: 60px;
+}
+.services .Coursesdemo ol li{
+    margin: 30px 0;
+}
+.services .Coursesdemo:hover{
+    background-color: purple;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.services .Coursesdemo .images img{
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.services .Coursesdemo .images{
+    display: flex;
+}
 @media screen and (max-width: 500px) {
     nav{
        
