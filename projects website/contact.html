@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Projects</title>
+    <link rel="icon" href="./LOGO/PROJECT icon.png" />
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      .main-container img{
+    width: 100%;
+    /* opacity: 0.5; */
+    overflow: hidden;
+    height: 81vh;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+form input{
+    width: 300px;
+    padding: 12px;
+    border-radius: 60px;
+    border: none;
+    margin: 10px;
+    outline: none;
+}
+form textarea{
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin: 20px;
+    outline: none;
+}
+form input[type="submit"]{
+    width: 80px;
+    background-color: blue;
+    border-radius: 60px;
+    cursor: pointer;
+    color: white;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">
+        <img src="./LOGO/PROJECT LOGO.png" alt="loading..." />
+      </a>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./electronics.html">Porjects</a>
+          <div class="project-hide">
+            <ul>
+              <li><a href="./mech.html">Mechanical</a></li>
+              <li><a href="./electronics.html">Electronics</a></li>
+              <li><a href="./cse.html">CSE Projects</a></li>
+              <li><a href="./electrical.html">Electrical</a></li>
+              <li><a href="./ai.html">A.I.</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="active">Contact Us</li>
+      </ul>
+    </nav>
+    <div class="main-container">
+        <img src="./photos/contact background.jpg" alt="loading...">
+    </div>
+    <form action="">
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="email" required><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="query"></textarea><br>
+        <input type="submit" value="Send">
+    </form>
+      
+    <div class="quick-bar">
+        <div class="logo">
+          <img src="./LOGO/PROJECT LOGO.png" alt="" />
+        </div>
+        <div class="line"></div>
+        <div class="quick-links">
+          <h1>Quick link</h1>
+          <ul>
+            <li>
+              <a href="./mech.html"
+                >Mechanical Engineering</a>
+            </li>
+            <li>
+              <a href="./electronics.html">ECE</a>
+            </li>
+            <li>
+              <a href="./cse.html">Computer science Projects</a>
+            </li>
+            <li>
+              <a href="./ai.html">Artificial Intelligence</a>
+            </li>
+            <li>
+              <a href="./cad.html">Computer Aided Design</a>
+            </li>
+            <li>
+              <a href="./electrical.html">Electrical engineering</a>
+            </li>
+            <li>
+              <a href="./civil.html">Civil Engineering</a>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+
+        <div class="contact">
+            <h1>Get in touch</h1>
+            <ul>
+                <li>
+                    +91-9352641216
+                </li>
+                <li>
+                    +91-8949971253
+                </li>
+            </ul>
+            <div class="icons">
+                <a href=""><img src="./icons/github.png" alt=""></a>
+                <a href=""><img src="./icons/gmail.png" alt=""></a>
+                <a href=""><img src="./icons/linkedin.png" alt=""></a>
+                <a href=""><img src="./icons/twitter (1).png" alt=""></a>
+            </div>
+        </div>
+      </div>
+      <div class="foot">
+        <ul>
+          <li>
+            <a href="./t&c.html">Terms & conditions</a>
+          </li>
+          <li>
+            <a href="./privacy.html">Privacy policies</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

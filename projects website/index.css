@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    overflow: hidden;
+    height: 6vh;
+    box-shadow: 0px 0px 2px 0.01px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+   
+   
+}
+nav ul li{
+    margin-right: 30px;
+    cursor: pointer;
+    height: 100%;
+    padding: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: blue;
+    transition: 0.3s ease;
+}
+nav img{
+    width: 150px;
+    margin-left: 30px;
+}
+.project-hide{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0.1px;
+    right: 80px;
+    top:77px;
+}
+nav ul li:nth-child(3):hover .project-hide{
+    display: block;
+}
+nav ul li:nth-child(3):hover{
+    box-shadow: 0px 0px 10px 0.1px;
+   
+}
+.project-hide ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+}
+.project-hide ul li{
+    padding: 5px 0;
+    width: 100%;
+    margin: 20px 0;
+    height: max-content;
+    
+}
+.project-hide ul li:hover{
+    background-color: whitesmoke;
+    transition: 0.3s ease;
+}
+.main-container .content img{
+    width: 200px;
+}
+.content{
+    border: 1px solid black;
+    width: max-content;
+    padding: 20px;
+    margin: 65px;
+}
+.box{
+    display: flex;
+   
+    width: max-content;
+    margin: auto;
+}
+.content .name{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+
+}
+.content a:hover{
+    color: blue;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.content .name p{
+    opacity: 0.7;
+    font-size: 11px;
+}
+.active{
+    font-weight: 600;
+}
+.foot ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    
+}
+.foot ul a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+}
+.foot ul li{
+    margin-right: 30px;
+}
+.quick-bar{
+    display: flex;
+    margin: 50px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.532);
+    
+   
+}
+.quick-bar .logo img{
+    width: 200px;
+}
+.contact .icons img{
+    width: 23px;
+}
+.line{
+    width: 2px;
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.532);
+}
+.logo{
+    margin: 18px 80px 0 280px;
+}
+.quick-links{
+    margin: 0 80px;
+    
+}
+.contact{
+    margin: 0 80px;
+
+}
+.quick-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.quick-links ul li{
+    margin: 8px;
+}
+.quick-links ul a{
+    text-decoration: none;
+    color: black;
+}
+.quick-links ul a:hover{
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact ul li{
+    margin: 8px;
+}
+.contact .icons a:nth-child(1){
+    margin-left: 7px;
+}
+.contact .icons a{
+    margin-left: 16px;
+}
+.contact .icons{
+    margin-top: 10px;
+}
+@media screen and (max-width : 500px) {
+    
+    nav{
+        display: block;
+        overflow: visible;
+       
+    }
+    nav ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+       height: 30px;
+       background-color: whitesmoke;
+       font-size: 12px;
+       opacity: 0.8;
+    }
+    nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100px;
+    }
+    nav img{
+        width: 150px;
+        margin: auto;
+    }
+    .project-hide{
+        width: 100%;
+        right: 0px;
+    }
+    .box{
+        display: block;
+    }
+    .foot ul{
+        display: block;
+        
+        text-align: center;
+        
+    }
+    .foot ul li{
+        margin-right: 0px;
+    }
+    .quick-bar{
+        display: block;
+        margin: 50px 0;
+        text-align: center;
+        border-top: 2px solid rgba(0, 0, 0, 0.532);
+        
+       
+    }
+    .quick-bar .logo img{
+        display: none;
+    }
+    .contact .icons img{
+        width: 23px;
+    }
+    .line{
+        width: 0px;
+        height: 0px;
+    }
+    .logo{
+        margin: 18px 80px 0 280px;
+    }
+    .quick-links{
+        margin: 0 80px;
+        
+    }
+    .contact{
+        margin: 0 80px;
+    
+    }
+    .quick-links ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .quick-links ul li{
+        margin: 10px;
+    }
+}
