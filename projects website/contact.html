@@ -161,6 +161,7 @@ nav ul a{
     </div>
   <script>
         function sendMail(){
+          event.preventDefault()
             var params = {
                 fullName : document.getElementById("fullName").value,
                 email_id : document.getElementById("email_id").value,
