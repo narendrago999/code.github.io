@@ -8,6 +8,14 @@
     <link rel="icon" href="./LOGO/PROJECT icon.png" />
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("ePgXctzZsLYvaLqtG");
+        })();
+    </script>
     <style>
       .main-container img{
     width: 100%;
@@ -78,10 +86,10 @@ nav ul a{
         <img src="./photos/contact background.jpg" alt="loading...">
     </div>
     <form action="">
-        <input type="text" placeholder="Full Name" required><br>
-        <input type="email" placeholder="email" required><br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="query"></textarea><br>
-        <input type="submit" value="Send">
+        <input type="text" placeholder="Full Name" id="fullName" required><br>
+        <input type="email" placeholder="email" id="email" required><br>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="query"></textarea><br>
+        <input onclick="sendMail()" type="submit" value="Send">
     </form>
       
     <div class="quick-bar">
@@ -150,5 +158,18 @@ nav ul a{
         </ul>
       </div>
     </div>
+  <script>
+        function sendMail(){
+            var params = {
+                fullName : document.getElementById("fullName").value,
+                email_id : document.getElementById("email_id").value,
+                number : document.getElementById("number").value,
+                message : document.getElementById("message").value
+            }
+            emailjs.send("service_az5lwv9", "template_z9c85ni", params).then(function (res){
+                alert("send success!");
+            })
+        }
+    </script>
   </body>
 </html>
